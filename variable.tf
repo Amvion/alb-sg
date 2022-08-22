@@ -17,6 +17,3 @@ variable "alb-from-port-i2" {
 variable "alb-to-port-i2" {
   type = string
 }
-variable "vpc_name" {
-  type = string
-}
