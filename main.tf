@@ -1,7 +1,7 @@
 data "aws_vpc" "Terraform-vpc" {
   filter {
     name = "tag:Name"
-    values = var.vpc_name
+    values = "VPC-NAME-HERE"
   }
 }
 resource "aws_security_group" "alb-sg" {
