@@ -1,7 +1,7 @@
 data "aws_vpc" "Terraform-vpc" {
   filter {
     name = "tag:Name"
-    values = ["default don't delete"]
+    values = var.vpc_name
   }
 }
 resource "aws_security_group" "alb-sg" {
